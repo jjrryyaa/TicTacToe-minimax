@@ -2,6 +2,7 @@ module TicTacMinimax where
 
 import Text.Read
 import Data.List
+import Tictacmain
 
 
 ---------------------------------- data/ type declarations ----------------------------------
@@ -150,7 +151,7 @@ startMessage = do
   ans <- getLine
   case ans of 
     "1" -> startGame 
-    "2" -> playGame X initialBoard
+    "2" -> mainGUI
     _ -> return ()
 
 
